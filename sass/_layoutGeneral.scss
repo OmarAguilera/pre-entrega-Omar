@@ -1,4 +1,4 @@
-/* Anidando */
+/* Nesting */
 /* Diseño de páginas hecho con Grids */
 .contenedor {
     width: 100%;
@@ -10,35 +10,35 @@
     grid-template-rows: repeat(4, auto);
 
     grid-template-areas: "header header header"
-                         "contenido contenido sidebar"
-                         "contenido contenido sidebar"
-                         "footer footer footer";
+        "contenido contenido sidebar"
+        "contenido contenido sidebar"
+        "footer footer footer";
 
-                         .sidebar {
-                            grid-column: 3 / 4;
-                            background: $colorFisio2;
-                            margin-right: 20px;
-                            margin-left: 20px;
-                            display: flex;
-                            align-items: center;
-                            align-content: center;
-                            min-height: 100px;
-                            grid-area: sidebar;
-                        }
-                        
-                        .contenido {
-                            grid-area: contenido;
-                        }
+    .sidebar {
+        grid-column: 3 / 4;
+        background: $colorFisio2;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        min-height: 100px;
+        grid-area: sidebar;
+    }
 
-                        .header {
-                            background: $colorFisio2;
-                            color: #fff;
-                            grid-area: header;
+    .contenido {
+        grid-area: contenido;
+    }
 
-                        }
-                        .footer {
-                            background: $colorFisio2;
-                            grid-area: footer;
-                        }
+    .header {
+        background: $colorFisio2;
+        color: #fff;
+        grid-area: header;
 
+    }
+
+    .footer {
+        background: $colorFisio2;
+        grid-area: footer;
+    }
 }

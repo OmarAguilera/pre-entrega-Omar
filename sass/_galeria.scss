@@ -13,7 +13,7 @@
 
 .columna {
     flex: 25%;
-    
+
     .gallery {
         grid-row-gap: 20px;
         grid-column-gap: 20px;
@@ -23,19 +23,20 @@
 
 /* Media Queries adicionales (para la galería) */
 
-@media (max-width: 1000px){
-    .columna{
+@media (max-width: 1000px) {
+    .columna {
         flex: 30%;
     }
 }
-@media (max-width: 800px){
-    .columna{
+
+@media (max-width: 800px) {
+    .columna {
         flex: 50%;
     }
 }
 
-@media (max-width: 600px){
-    .columna{
+@media (max-width: 600px) {
+    .columna {
         flex: 100%
     }
 }

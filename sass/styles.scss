@@ -5,10 +5,11 @@
 }
 
 /* Estilos SASS */
+/* Variables */
 $colorFisio1: #96aedd;
 $colorFisio2: #23315e;
 
-
+/* Partials */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
 @import "layoutGeneral";
 @import "bootstrap";
@@ -38,11 +39,9 @@ h1 {
 
 /* Diseño de páginas hecho con Grids */
 
-.contenedor > div,
-.contenedor .contenido
-.contenedor .sidebar
-.contenedor .footer {
-    background:#fff;
+.contenedor>div,
+.contenedor .contenido .contenedor .sidebar .contenedor .footer {
+    background: #fff;
     padding: 20px;
     border-radius: 4px;
 }
@@ -50,12 +49,18 @@ h1 {
 
 /* Responsive disposición de páginas*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .contenedor {
         grid-template-areas: "header header header"
-                        "contenido contenido contenido"
-                        "sidebar sidebar sidebar"
-                        "footer footer footer";
+            "contenido contenido contenido"
+            "sidebar sidebar sidebar"
+            "footer footer footer";
     }
 }
 
+
+.noSidebar {
+    margin-right: 1.5%;
+    margin-bottom: 20%;
+    margin-top: 2%;
+}

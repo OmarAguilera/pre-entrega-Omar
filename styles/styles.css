@@ -7,7 +7,9 @@
 }
 
 /* Estilos SASS */
-/* Anidando */
+/* Variables */
+/* Partials */
+/* Nesting */
 /* Diseño de páginas hecho con Grids */
 .contenedor {
   width: 100%;
@@ -135,4 +137,9 @@ h1 {
   .contenedor {
     grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "footer footer footer";
   }
+}
+.noSidebar {
+  margin-right: 1.5%;
+  margin-bottom: 20%;
+  margin-top: 2%;
 }/*# sourceMappingURL=styles.css.map */
