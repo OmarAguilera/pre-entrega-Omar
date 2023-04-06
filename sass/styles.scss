@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos SASS */
+$colorFisio1: #96aedd;
+$colorFisio2: #23315e;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+@import "layoutGeneral";
+@import "bootstrap";
+@import "galeria";
+
+/* Aplicando mixin */
+@mixin estiloFuente1($tamaño) {
+    color: rgb(255, 255, 255);
+    font-size: $tamaño;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $colorFisio1;
+    @include estiloFuente1(30px);
+}
+
+p {
+    margin-left: 40px;
+}
+
+h1 {
+    @include estiloFuente1(90px);
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* Diseño de páginas hecho con Grids */
+
+.contenedor > div,
+.contenedor .contenido
+.contenedor .sidebar
+.contenedor .footer {
+    background:#fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+/* Responsive disposición de páginas*/
+
+@media screen and (max-width: 768px){
+    .contenedor {
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "sidebar sidebar sidebar"
+                        "footer footer footer";
+    }
+}
+
